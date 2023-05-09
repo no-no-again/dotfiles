@@ -89,5 +89,8 @@ return require('packer').startup(function(use)
 
     -- git
     use("kdheepak/lazygit.nvim")
-    -- use("tpope/vim-fugitive")
+    use {
+        'lewis6991/gitsigns.nvim',
+        tag = 'release'
+    }
 end)
