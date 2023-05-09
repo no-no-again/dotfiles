@@ -30,7 +30,8 @@ return require('packer').startup(function(use)
         run = function()
             local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
             ts_update()
-        end, }
+        end,
+    }
     use("nvim-treesitter/playground")
     use("theprimeagen/refactoring.nvim")
     use("mbbill/undotree")
@@ -60,6 +61,12 @@ return require('packer').startup(function(use)
         }
     }
 
+    -- enchance f/F t/T movements
+    use {
+        'ggandor/flit.nvim',
+        requires = { { 'ggandor/leap.nvim' } }
+    }
+
     use("eandrju/cellular-automaton.nvim")
 
     -- colorschemes
@@ -74,4 +81,10 @@ return require('packer').startup(function(use)
 
     -- zen mode
     use("folke/zen-mode.nvim")
+
+    -- status line
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
 end)
