@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/Users/zronev/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["lazygit.nvim"] = {
+    loaded = true,
+    path = "/Users/zronev/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
+    url = "https://github.com/kdheepak/lazygit.nvim"
+  },
   ["leap.nvim"] = {
     loaded = true,
     path = "/Users/zronev/.local/share/nvim/site/pack/packer/start/leap.nvim",

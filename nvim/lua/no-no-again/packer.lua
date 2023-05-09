@@ -35,7 +35,6 @@ return require('packer').startup(function(use)
     use("nvim-treesitter/playground")
     use("theprimeagen/refactoring.nvim")
     use("mbbill/undotree")
-    use("tpope/vim-fugitive")
     use("nvim-treesitter/nvim-treesitter-context");
 
     use {
@@ -87,4 +86,8 @@ return require('packer').startup(function(use)
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
+
+    -- git
+    use("kdheepak/lazygit.nvim")
+    -- use("tpope/vim-fugitive")
 end)
